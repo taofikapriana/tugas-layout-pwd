@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<link rel="style.css" href="stylesheet" type="text/css" media="all">
+<body>
+    <style>
+        body {
+         margin: 0;
+         font-family: Arial, sans-serif;
+         min-height: 100vh;
+         }
+         header, footer, article, aside{
+            padding: 20px;
+            text-align: center;
+         }
+         header {
+        background-color: #02375ff5; 
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .logo img {
+        max-width: 150px;
+        }
+        nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        }
+        nav ul li {
+        display: inline-block;
+        margin-left: 20px;
+        }
+        nav ul li:first-child {
+        margin-left: 0;
+        }
+        nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        }
+
+         .container {
+            flex-wrap: wrap;
+            color: #f9f8fc;
+            padding: 20px;
+        }
+        article {
+            display: flex;
+            flex: 0 0 93%;
+            background-color: #1040a6;
+            color: #f9f8fc;
+            padding: 50px;
+            margin-bottom: 20px;
+        }
+        article img{
+        max-width: 30%; 
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        }
+        .container {
+        display: flex;
+        }
+        aside {
+        text-align: center;
+        background-color: #1b52c9;
+        color: #f9f8fc;
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+        }
+
+        .box {
+        width: 30%;
+        padding: 20px;
+        border: 1px solid #1f2ce0;
+        text-align: center;
+        }
+        .box img {
+        width: 200px; 
+        height: 200px; 
+        display: block;
+        margin: 0 auto 10px; 
+        }
+        .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        }
+        .footer-column {
+        flex: 1;
+        margin-right: 20px;
+        }
+        .footer-column:last-child {
+        margin-right: 0;
+        }
+        ul {
+        list-style: none;
+        padding: 0;
+        }
+        ul li {
+        margin-bottom: 10px;
+        }
+        a {
+        color: #fff;
+        text-decoration: none;
+        }
+        a:hover {
+        text-decoration: underline;
+        }
+     </style>
+    <header>
+        <div class="logo">
+          <img src="gmb.png" alt="logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <div class="container">
+        <article>
+        <img src="poto.png" alt="gambar">
+        <p>LAYANAN KEUANGAN <br>
+           <strong> Dijamin aman, makin dekat meraih impian</strong> <br>
+            Investasi eMAS terjamin aman dan bisa ditukar emas fisik, didukung oleh lembaga penyedia emas digital yang diawasi BAPPEBTI. Pantau harga terupdatenya di DANA!
+        </p> 
+         </div>
+         <div class="container">
+            <aside>
+                <div class="box">
+                    <p>Kotak 1.</p>
+                    <img src="1.png" alt="Gambar 1">
+                </div>
+                <div class="box">
+                    <p>kotak 2.</p>
+                    <img src="2.png" alt="Gambar 2">
+                </div>
+                <div class="box">
+                    <p>kotak 3.</p>
+                    <img src="3.png" alt="Gambar 3">
+                </div>
+            </aside>
+        </div>
+        <footer class="footer">
+            <div class="footer-column">
+                <h3>LIQUI MOLY</h3>
+            </div>
+            <div class="footer-column">
+                <h3>CUSTEMERS</h3>
+                <ul>
+                    <li><a href="#">Layanan 1</a></li>
+                    <li><a href="#">Layanan 2</a></li>
+                    <li><a href="#">Layanan 3</a></li>
+                    <li><a href="#">Layanan 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Kontak</h3>
+                <address>
+                    Jalan Cikalong<br>
+                    Kota Cianjur<br>
+                    Negara Indonesia<br>
+                    <a href="mailto:info@example.com">mtaofikaprianas@gmail.com</a>
+                </address>
+            </div>
+        </footer>
+</body>
+</html>
